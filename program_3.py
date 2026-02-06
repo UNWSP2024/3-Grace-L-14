@@ -15,6 +15,18 @@ def weight_conversion(weight):
     ######################
     # WRITE YOUR CODE HERE
     ######################
+
+    if weight <= 2:
+        shippingCost = 1.50
+
+    if weight > 2 and weight <= 6:
+        shippingCost = 3
+
+    if weight > 6 and weight <= 10:
+        shippingCost = 4
+
+    if weight > 10:
+        shippingCost = 4.75
     
     return shippingCost
 
